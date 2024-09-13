@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoSearch } from "react-icons/io5";
 
 const SearchBar = ({ setSearchQuery }) => {
   const [query, setQuery] = useState('');
@@ -21,7 +22,7 @@ const SearchBar = ({ setSearchQuery }) => {
         type="submit"
         className="bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition"
       >
-        Search
+        <IoSearch />
       </button>
     </form>
   );
