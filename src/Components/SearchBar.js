@@ -10,11 +10,11 @@ const SearchBar = ({ setSearchQuery }) => {
   };
 
   return (
-    <form onSubmit={handleSearch} className="flex justify-center mb-4">
+    <form onSubmit={handleSearch} className="flex justify-center mb-4 hover:scale-105 transition ease-out duration-300">
       <input
         type="text"
         className="w-1/2 p-2 border border-gray-300 rounded-l"
-        placeholder="Search for news..."
+        placeholder="Search..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

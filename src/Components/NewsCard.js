@@ -3,7 +3,7 @@ import './NewsCard.css'
 
 const NewsCard = ({ news }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+    <div className="anime bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 ease-out duration-200">
       <img
         src={news.image}
         alt={news.title}
@@ -14,7 +14,7 @@ const NewsCard = ({ news }) => {
         <p className="text-gray-700 text-sm mb-4">{news.description}</p>
         <a
           href={news.url}
-          className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+          className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition hover:scale-105 ease-out duration-300"
           target="_blank"
           rel="noopener noreferrer"
         >
